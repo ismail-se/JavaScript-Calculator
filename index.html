@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <div class="head">
+                <h3>Ismail's Calculator</h3>
+            </div>
+            <div class="exp"></div>
+            <input type="text" value="0"  size="7">
+            <div class="row">
+                <div class="col ex" onclick="percent()">%</div>
+                <div class="col ex" onclick="ce()">CE</div>
+                <div class="col ex" onclick="c()">C</div>
+                <div class="col op" onclick="back(this.innerText)"><i class="fas fa-backspace"></i></div>
+            </div>
+            <div class="row">
+                <div class="col ex" onclick="inverse()">1&divide;x</div>
+                <div class="col ex" onclick="sqr()">x<sup>2</sup></div>
+                <div class="col ex" onclick="sqrt()">&Sqrt;x</div>
+                <div class="col op" onclick="operator('/')">&divide;</div>
+            </div><div class="row">
+                <div class="col" onclick="expression(this.innerText)">7</div>
+                <div class="col" onclick="expression(this.innerText)">8</div>
+                <div class="col" onclick="expression(this.innerText)">9</div>
+                <div class="col op" onclick="operotor('*')">X</div>
+            </div><div class="row">
+                <div class="col" onclick="expression(this.innerText)">4</div>
+                <div class="col" onclick="expression(this.innerText)">5</div>
+                <div class="col" onclick="expression(this.innerText)">6</div>
+                <div class="col op" onclick="operator('-')">&minus;</div>
+            </div><div class="row">
+                <div class="col" onclick="expression(this.innerText)">1</div>
+                <div class="col" onclick="expression(this.innerText)">2</div>
+                <div class="col" onclick="expression(this.innerText)">3</div>
+                <div class="col op" onclick="operator('+')">+</div>
+            </div><div class="row">
+                <div class="col" onclick="sign()">+/-</div>
+                <div class="col" onclick="expression(this.innerText)">0</div>
+                <div class="col" onclick="expression(this.innerText)">.</div>
+                <div class="col op" onclick="operator(this.innerText)">=</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
